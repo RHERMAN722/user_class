@@ -1,13 +1,31 @@
 ### CREATE AT USER CLASS####
-
+class User
 	##Requirements:
 		#The user class should initialize with an email, password and birthdate
 
 		#The user class should have reader & writer methods for:
+		def initialize (email, password, birthdate)
+			@email = email
+			@password = password
+			@birthdate = birthdate
+			end 
 			#Name
 			#Location
 			#Status
+			def name_user (name)
+				@name = name
+				end
 
+				def username
+					@name 
+				end
+
+			def home_of_user(home)
+				@home = home
+			end
+
+			def hometown
+				@home 
 
 		#Call a method in the initialize that confirms the password
 			#First, create a method that prompts the user for input via the terminal
